@@ -1,21 +1,10 @@
 import React from 'react';
 
-const FriendListItem = ({ friends }) => (
+const FriendListItem = ({ isOnline, avatar, name }) => (
   <>
-    {friends.map(friend => (
-      <li className="item" key={friend.id}>
-        <span
-          className={`status ${friend.isOnline ? 'online' : 'offline'}`}
-        ></span>
-        <img
-          className="avatar"
-          src={friend.avatar}
-          alt="User avatar"
-          width="48"
-        />
-        <p className="name">{friend.name}</p>
-      </li>
-    ))}
+    <span className={`status ${isOnline ? 'online' : 'offline'}`}></span>
+    <img className="avatar" src={avatar} alt="User avatar" width="48" />
+    <p className="name">{name}</p>
   </>
 );
 
