@@ -4,7 +4,9 @@ const FriendListItem = ({ friends }) => (
   <>
     {friends.map(friend => (
       <li className="item" key={friend.id}>
-        <span className="status {friend.isOnline: 'online': 'offline'}"></span>
+        <span
+          className={`status ${friend.isOnline ? 'online' : 'offline'}`}
+        ></span>
         <img
           className="avatar"
           src={friend.avatar}
