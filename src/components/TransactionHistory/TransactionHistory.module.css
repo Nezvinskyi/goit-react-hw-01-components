@@ -1,6 +1,6 @@
 .transaction-history,
 table {
-  width: 100%;
+  width: 50%;
 
   border-collapse: collapse;
   border-style: hidden;
@@ -38,6 +38,5 @@ tr:hover {
 }
 
 td:first-child {
-  text-align: left;
-  padding-left: 1em;
+  text-align: center;
 }

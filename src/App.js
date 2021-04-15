@@ -19,13 +19,13 @@ const App = () => (
       location={user.location}
       stats={user.stats}
     />
-
+    <br />
     <h2>Task 2: Statistics section</h2>
     <Statistics title="Upload stats" stats={statisticalData} />
-
+    <br />
     <h2>Task 3: Friends list</h2>
     <FriendList friends={friends} />
-
+    <br />
     <h2>Task 4: Transaction history</h2>
     <TransactionHistory items={transactions} />
   </Layout>
