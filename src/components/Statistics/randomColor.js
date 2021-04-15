@@ -1,7 +1,10 @@
 const randomColor = () => {
-  return `rgb(${Math.round(Math.random() * 255)}, ${Math.round(
-    Math.random() * 255,
-  )}, ${Math.round(Math.random() * 255)})`;
+  // диапазон для контрастности - более темные цвета
+  const min = 0;
+  const max = 150;
+  return `rgb(${Math.round(Math.random() * (max - min) + min)}, ${Math.round(
+    Math.random() * (max - min) + min,
+  )}, ${Math.round(Math.random() * (max - min) + min)})`;
 };
 
 export default randomColor;
