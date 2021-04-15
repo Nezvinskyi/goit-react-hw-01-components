@@ -8,8 +8,10 @@ const Statistics = ({ title, stats }) => (
 		{title && <h3 className={styles.title}>{title}</h3>}
 
     <ul className={styles.statList}>
-			{stats.map(item => {
-				return	<li key={item.id} className={styles.item} style={{ backgroundColor: randomColor() }}>
+			{stats.map((item, idx, array) => {
+				const flexBasis = `${100/array.length}%`;
+				return <li key={item.id} className={styles.item} style={{
+					backgroundColor: randomColor(), flexBasis: flexBasis }}>
 					<span className={styles.label}>{item.label}</span>
 					<span className={styles.percentage}>{item.percentage}%</span>
 				</li>

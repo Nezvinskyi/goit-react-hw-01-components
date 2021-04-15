@@ -7,6 +7,7 @@
   color: rgb(114, 119, 135);
   border-radius: 4px;
   overflow: hidden;
+  width: 380px;
 }
 
 .title {
@@ -29,7 +30,6 @@
   flex-direction: column;
   justify-content: space-between;
   color: #fff;
-  min-width: 60px;
   padding: 8px;
 }
 
