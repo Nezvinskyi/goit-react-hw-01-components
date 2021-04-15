@@ -9,8 +9,7 @@ const Statistics = ({ title, stats }) => (
 
     <ul className={styles.statList}>
 			{stats.map(item => {
-				const color = randomColor()
-				return	<li key={item.id} className={styles.item} style={{ backgroundColor: color }}>
+				return	<li key={item.id} className={styles.item} style={{ backgroundColor: randomColor() }}>
 					<span className={styles.label}>{item.label}</span>
 					<span className={styles.percentage}>{item.percentage}%</span>
 				</li>
